@@ -7,7 +7,7 @@
 
 ### Подзадачи
 1. Создать свой образ **Docker** с **PostgreSQL**:
-   - Имя пользователя _adrianhel_,  
+   - Имя пользователя _postgres_,  
    - Пароль _postgres_,
    - PostgreSQL 13 версии.
 2. Предусмотреть подключение 2-х томов для хранения данных: 
@@ -49,8 +49,8 @@ VOLUME ["/var/lib/postgresql/data"]
 docker build -t adrianhel/test:ver.1.0 .
 ```
 
-`-t adrianhel/test:ver.1.0` — задаёт имя `adrianhel`, репозиторий `test` и тег `ver.1.0` для образа. 
-Тег по умолчанию будет `latest`, если не указать.  
+`-t adrianhel/test:ver.1.0` — задаёт имя `adrianhel`, репозиторий `test` и тег `ver.1.0` для образа (по умолчанию 
+будет `latest`, если не указать).  
 `.` — указывает, что **Dockerfile** находится в текущей директории.  
 
 ### Проверка образа
