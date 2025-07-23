@@ -7,6 +7,6 @@
 
 ### Пример оформления
 
-[Markdown-код](/task_3/README.md)
+[Markdown-код](task_3/task_3.md)
 
-<img src="/img/task_3.png" width="100%">
+<img src="/img/task_3.png" width="90%">
