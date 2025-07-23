@@ -21,7 +21,7 @@
 Далее необходимо пройти в [Repositories](https://hub.docker.com/repositories/) и нажать кнопку `Create a Repository`.  
 Создадим репозиторий *test* и добавим к нему небольшое описание:
 
-<img src="/img/task_1.1.png" width="60%">
+<img src="/img/task_1.1.png" width="70%">
 
 После нажатия кнопки `Create` репозиторий будет создан.
 
@@ -60,7 +60,7 @@ docker build -t adrianhel/test:ver.1.0 .
 docker images
 ```
 
-<img src="/img/task_1.2.png" width="50%">
+<img src="/img/task_1.2.png" width="40%">
 
 ### Загрузка образа
 Теперь остается запушить образ на **Docker Hub**. Введем в терминале:
