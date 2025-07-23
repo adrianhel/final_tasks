@@ -21,7 +21,7 @@
 Далее необходимо пройти в [Repositories](https://hub.docker.com/repositories/) и нажать кнопку `Create a Repository`.  
 Создадим репозиторий *test* и добавим к нему небольшое описание:
 
-<img src="/img/task_1.1.png" width="40%">
+<img src="/img/task_1.1.png" width="80%">
 
 После нажатия кнопки `Create` репозиторий будет создан.
 
