@@ -30,8 +30,8 @@ CREATE TABLE firstname (
 ```sql
 INSERT INTO firstname (firstname) 
  VALUES ('Иванов'),
-	    ('Петров'),
-		('Сидоров')
+        ('Петров'),
+        ('Сидоров')
 ;
 ```
 
