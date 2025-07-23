@@ -60,7 +60,7 @@ docker build -t adrianhel/test:ver.1.0 .
 docker images
 ```
 
-<img src="/img/task_1.2.png" width="30%">
+<img src="/img/task_1.2.png" width="50%">
 
 ### Загрузка образа
 Теперь остается запушить образ на **Docker Hub**. Введем в терминале:
@@ -69,10 +69,18 @@ docker images
 docker push adrianhel/test:ver.1.0
 ```
 
-<img src="/img/task_1.3.png" width="50%">
+<img src="/img/task_1.3.png" width="70%">
 
 Теперь проверим, появился ли образ в репозитории.
 
 <img src="/img/task_1.4.png" width="80%">
 
 Образ успешно добавлен в репозиторий.
+
+Далее можно нажать на `See all` и в оновившемся окне в правой части увидим ссылку на наш _Docker_-образ:
+
+<img src="/img/task_1.5.png" width="100%">
+
+```bash
+docker pull adrianhel/test:ver.1.0
+```
