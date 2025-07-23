@@ -17,8 +17,8 @@
 
 ```sql
 CREATE TABLE firstname (
-		id serial PRIMARY KEY,
-		firstname VARCHAR(30) NOT NULL)
+    id serial PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL)
 ;
 ```
 
