@@ -40,7 +40,7 @@ INSERT INTO lastname (lastname)
 		('Сидорович')
 ;
 
-SELECT CONCAT(f.firstname, " ", s.surname, " ", l.lastname) AS full_name
+SELECT CONCAT_WS(' ', f.firstname, s.surname, l.lastname) AS full_name
 FROM firstname AS f
 JOIN surname AS s ON f.id = s.id
 JOIN lastname AS l ON f.id = l.id
