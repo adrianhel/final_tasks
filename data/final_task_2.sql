@@ -2,16 +2,16 @@ DROP TABLE IF EXISTS firstname
 ;
 
 CREATE TABLE firstname (
-		id serial PRIMARY KEY,
-		firstname VARCHAR(30) NOT NULL)
+    id serial PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL)
 ;
 
 DROP TABLE IF EXISTS surname
 ;
 
 CREATE TABLE surname (
-		id serial PRIMARY KEY,
-		surname VARCHAR(30) NOT NULL)
+    id serial PRIMARY KEY,
+    surname VARCHAR(30) NOT NULL)
 ;
 
 DROP TABLE IF EXISTS lastname
@@ -40,9 +40,7 @@ INSERT INTO lastname (lastname)
 		('Сидорович')
 ;
 
-SELECT f.firstname
-	,s.surname
-	,l.lastname
+SELECT CONCAT(f.firstname, " ", s.surname, " ", l.lastname)
 FROM firstname AS f
 JOIN surname AS s ON f.id = s.id
 JOIN lastname AS l ON f.id = l.id
