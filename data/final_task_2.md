@@ -50,6 +50,6 @@ ORDER BY 1 DESC
 ;
 ```
 
-<img src="/img/task_2.png" width="20%">
+<img src="/img/task_2.png" width="15%">
 
 [Итоговое задание №2 (код)](final_task_2.sql)
