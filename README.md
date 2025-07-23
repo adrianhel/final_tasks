@@ -1,2 +1,8 @@
-# test_andy
-de_course
+# Задания по инженерии данных
+
+## Содержание  
+1. [Итоговое задание №1](/data/final_task_1.md)
+2. [Итоговое задание №2](/data/final_task_2.md)
+3. [Итоговое задание №3](/data/final_task_3.md)
+4. [Итоговое задание №4](/data/final_task_4.md)
+5. [Итоговое задание №5](/data/final_task_5.py)
