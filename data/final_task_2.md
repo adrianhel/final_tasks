@@ -52,4 +52,4 @@ ORDER BY 1 DESC
 
 <img src="/img/task_2.png" width="20%">
 
-[Итоговое задание №2 (код)](final_task_2.sql)
+[Итоговое задание №2 (код)](task_2/final_task_2.sql)
