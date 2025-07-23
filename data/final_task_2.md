@@ -42,7 +42,7 @@ INSERT INTO firstname (firstname)
 разделителя. Далее с помощью _JOIN_ соединяем три таблицы по ключу _id_.
 
 ```sql
-SELECT CONCAT_WS(' ', f.firstname, s.surname, l.lastname)
+SELECT CONCAT_WS(' ', f.firstname, s.surname, l.lastname) AS full_name
 FROM firstname AS f
 JOIN surname AS s ON f.id = s.id
 JOIN lastname AS l ON f.id = l.id
