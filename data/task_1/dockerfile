@@ -1,0 +1,9 @@
+# Используем официальный образ PostgreSQL версии 13
+FROM postgres:13
+
+# Устанавливаем переменные окружения для пользователя и пароля
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=postgres
+
+# Указываем, что данные будут храниться в этой директории
+VOLUME ["/var/lib/postgresql/data"]
