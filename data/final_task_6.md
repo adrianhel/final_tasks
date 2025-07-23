@@ -44,7 +44,7 @@ pip install faker
 
 ### Формат вывода
 
-<img src="/img/task_6.2.png" width="32%">
+<img src="/img/task_6.2.png" width="30%">
 
 ## Решение задачи
 [Итоговое задание №6 (код)](final_task_6.2.py)
