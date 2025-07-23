@@ -1,11 +1,20 @@
+DROP TABLE IF EXISTS firstname
+;
+
 CREATE TABLE firstname (
 		id serial PRIMARY KEY,
 		firstname VARCHAR(30) NOT NULL)
 ;
 
+DROP TABLE IF EXISTS surname
+;
+
 CREATE TABLE surname (
 		id serial PRIMARY KEY,
 		surname VARCHAR(30) NOT NULL)
+;
+
+DROP TABLE IF EXISTS lastname
 ;
 
 CREATE TABLE lastname (
