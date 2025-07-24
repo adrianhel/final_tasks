@@ -1,6 +1,7 @@
 #!/bin/bash
+
 # Установка кодировки
-export LANG=en_US.UTF-8
+export LANG=ru_RU.UTF-8
 
 # Файл с логами
 LOG_FILE="access.log"
@@ -12,7 +13,7 @@ total_requests=$(awk 'NF' "$LOG_FILE" | wc -l)
 unique_ips=$(awk '{print $1}' "$LOG_FILE" | sort -u | wc -l)
 
 # Подсчет количества запросов по методам
-method_counts=$(awk '{print $6}' "$LOG_FILE" | sort | uniq -c)
+method_counts=$(awk '{gsub(/"/, ""); print $6}' "$LOG_FILE" | sort | uniq -c)
 
 # Найти самый популярный URL
 popular_url=$(awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n 1)
