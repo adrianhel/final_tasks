@@ -4,7 +4,7 @@
 LOG_FILE="access.log"
 
 # Подсчет общего количества запросов
-total_requests=$(wc -l < "$LOG_FILE")
+total_requests=$(awk 'NF' "$LOG_FILE" | wc -l)
 
 # Подсчет уникальных IP-адресов
 unique_ips=$(awk '{print $1}' "$LOG_FILE" | sort -u | wc -l)
@@ -19,8 +19,7 @@ popular_url=$(awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n
 {
   echo "Общее количество запросов: $total_requests"
   echo "Количество уникальных IP-адресов: $unique_ips"
-  echo "Количество запросов по методам:"
-  echo "$method_counts"
+  echo "Количество запросов по методам: $method_counts"
   echo "Самый популярный URL: $popular_url"
 } > report.txt
 
