@@ -17,10 +17,14 @@ popular_url=$(awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n
 
 # Создание отчета
 {
+  echo "Отчет о логе вебсервера"
+  echo "======================="
   echo "Общее количество запросов: $total_requests"
   echo "Количество уникальных IP-адресов: $unique_ips"
+  echo ""
   echo "Количество запросов по методам:"
   echo "$method_counts"
+  echo ""
   echo "Самый популярный URL: $popular_url"
 } > report.txt
 
