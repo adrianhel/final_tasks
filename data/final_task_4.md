@@ -106,6 +106,8 @@ popular_url=$(awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n
 echo "Отчет создан в report.txt"
 ```
 
+[Собранный скрипт](task_4/analyze_logs.sh)
+
 ### Запуск скрипта
 Сначала сделаем скрипт исполняемым:
 
@@ -119,7 +121,10 @@ chmod +x analyze_logs.sh
 ./analyze_logs.sh
 ```
 
+[Полученный отчет](task_4/report.txt)
+
 ### Проверка отчета
+Проверяем отчет следующей командой в терминале:
 
 ```bash
 cat report.txt
