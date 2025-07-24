@@ -1,4 +1,6 @@
 #!/bin/bash
+# Установка кодировки
+export LANG=en_US.UTF-8
 
 # Файл с логами
 LOG_FILE="access.log"
