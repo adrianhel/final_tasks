@@ -12,7 +12,7 @@
 ***report.txt*** работает.  
 
 ### Входные данные
-Файл *[report.txt](task_4/report.txt)* с логами следующего содержания:
+Файл *[access.log](task_4/access.log)* с логами следующего содержания:
 
 ```txt
 cat <<EOL > access.log
