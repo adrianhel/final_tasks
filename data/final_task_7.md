@@ -41,7 +41,6 @@ object StringProcessor {
 
 ```scala
 object StringProcessor {
-  // Преобразуем метод processStrings в функциональный стиль
   def processStrings(strings: List[String]): List[String] = {
     // Используем метод filter для отбора строк длиной больше 3 символов
     // Затем применяем метод map для преобразования строк в верхний регистр
