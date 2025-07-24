@@ -86,7 +86,7 @@ popular_url=$(awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n
 ```
 
 ### Сборка скрипта
-Собираем все в один файл `log_report.sh `, не забывая вначале добавить строчку:
+Собираем все в один файл `analyze_logs.sh`, не забывая вначале добавить строчку:
 
 ```bash
 #!/bin/bash
@@ -102,13 +102,13 @@ echo "Отчет создан в report.txt"
 Сначала сделаем скрипт исполняемым:
 
 ```bash
-chmod +x log_report.sh
+chmod +x analyze_logs.sh
 ```
 
 Теперь запустим скрипт:
 
 ```bash
-./log_report.sh
+./analyze_logs.sh
 ```
 
 ### Проверка отчета
