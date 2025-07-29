@@ -1,6 +1,6 @@
 # Final Tasks
 
-### [На главную ⤶](https://github.com/adrianhel/adrianhel.md)
+### [На главную ⤶](https://github.com/adrianhel)
 
 ---
 
