@@ -1,11 +1,13 @@
 # Final Tasks
-Итоговые задачи [курса](https://stepik.org/course/137235/syllabus) и проект по инженерии данных.
 
-### [На главную ⤶](https://github.com/adrianhel)
+### [На главную ⤶](https://github.com/adrianhel.md)
 
 ---
 
 <img src="/img/cover.png" width="100%">
+
+## О проекте
+Проект содержит решение задач из [курса](https://stepik.org/course/137235/syllabus) и выпускную работу по инженерии данных.
 
 ## Содержание  
 1. [Итоговое задание №1](/data/final_task_1.md) модуля _«Обустраиваем рабочее место с Docker»._
