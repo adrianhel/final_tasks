@@ -17,8 +17,13 @@ def items_by_category(purchases: list[dict]) -> dict:
     items_by_category = {}
     for purchase in purchases:
         if purchase["category"] not in items_by_category:
-            items_by_category[purchase["category"]] = []
-        items_by_category[purchase["category"]].append(purchase["item"])
+            items_by_category[purchase["category"]] = set()  # Используем множество для уникальности
+        items_by_category[purchase["category"]].add(purchase["item"])
+
+    # Преобразуем множества обратно в списки
+    for category in items_by_category:
+        items_by_category[category] = list(items_by_category[category])
+
     return items_by_category
 
 
@@ -48,7 +53,8 @@ def most_frequent_category(purchases: list[dict]) -> str:
     for purchase in purchases:
         if purchase["category"] not in category_count:
             category_count[purchase["category"]] = 0
-        category_count[purchase["category"]] += 1
+        category_count[purchase["category"]] += purchase["quantity"]  # Учитываем quantity
+
     return max(category_count, key=category_count.get)
 
 
