@@ -33,7 +33,7 @@ pip install faker
 
 ### Пример получившихся данных
 
-<img src="/img/task_6.1.png" width="70%">
+<img src="/img/task_6.1.png" width="50%">
 
 ## Часть 2. Анализ информации
 ### Подзадачи
