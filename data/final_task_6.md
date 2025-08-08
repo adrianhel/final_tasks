@@ -180,5 +180,5 @@ only showing top 20 rows
 spark.stop()
 ```
 
-[Итоговое задание №6 (код)](task_6/final_task_6.2.py)
-[Итоговое задание №6 (блокнот)](task_6/final_task_6.ipynb)
+[Итоговое задание №6 (код)](task_6/final_task_6.2.py)  
+[Итоговое задание №6 (блокнот)](task_6/final_task_6.ipynb)  
