@@ -44,7 +44,7 @@ pip install faker
 
 ### Формат вывода
 
-<img src="/img/task_6.2.png" width="30%">
+<img src="/img/task_6.2.png" width="20%">
 
 ## Решение задачи
 #### 1. Подгружаем необходимые модули и создаем сессию Spark
