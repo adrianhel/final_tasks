@@ -50,6 +50,10 @@ pip install faker
 #### 1. Подгружаем необходимые модули и создаем сессию Spark
 
 ```python
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, count, sum, to_date
+
+
 spark = SparkSession.builder \
     .appName("Log Analysis") \
     .getOrCreate()
