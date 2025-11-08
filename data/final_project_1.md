@@ -2,6 +2,10 @@
 
 ### [Назад в Final Tasks ⤶](/README.md)
 
+---
+
+<img src="/img/russian_houses.png" width="100%">
+
 ## Содержание
 ### 1. [Входные данные](project_1/input.md)
 
