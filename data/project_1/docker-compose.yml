@@ -18,7 +18,7 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
-    SPARK_HOME: /home/airflow/spark
+    SPARK_HOME: /usr/local/lib/python3.9/site-packages/pyspark
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
@@ -63,7 +63,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   clickhouse:
-    image: yandex/clickhouse-server:latest
+    image: clickhouse/clickhouse-server:latest
     container_name: clickhouse_user
     ports:
       - "8123:8123"
@@ -83,8 +83,6 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     depends_on:
       - clickhouse
-    networks:
-      - default
 
   redis:
     image: redis:7.2-bookworm
@@ -97,39 +95,6 @@ services:
       retries: 50
       start_period: 30s
     restart: always
-
-  # Опционально: отдельный сервис Spark, если нужен standalone cluster
-  spark-master:
-    image: bitnami/spark:latest
-    container_name: spark-master
-    environment:
-      - SPARK_MODE=master
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    ports:
-      - "7077:7077"
-      - "8081:8080"
-    volumes:
-      - spark-data:/bitnami
-
-  spark-worker:
-    image: bitnami/spark:latest
-    container_name: spark-worker
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark-master:7077
-      - SPARK_WORKER_MEMORY=1G
-      - SPARK_WORKER_CORES=1
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    depends_on:
-      - spark-master
-    volumes:
-      - spark-data:/bitnami
 
   airflow-webserver:
     <<: *airflow-common
@@ -291,12 +256,8 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-networks:
-  default:
-
 volumes:
   postgres-db-volume:
   postgres_data:
   clickhouse_data:
   grafana-data:
-  spark-data:
