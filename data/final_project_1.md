@@ -2,8 +2,6 @@
 
 ### [Назад в Final Tasks ⤶](/README.md)
 
----
-
 ## Содержание
 ### 1. [Входные данные](project_1/input.md)
 
