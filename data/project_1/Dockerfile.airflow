@@ -12,7 +12,4 @@ RUN apt-get update && \
 
 USER airflow
 
-# Установка PySpark
-RUN pip install --no-cache-dir \
-    pyspark==3.5.0 \
-    findspark
+# PySpark будет установлен через _PIP_ADDITIONAL_REQUIREMENTS
