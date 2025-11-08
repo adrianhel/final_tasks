@@ -17,6 +17,8 @@
 
 ### 5. [Загрузка данных в БД](project_1/download.md)
 
-### 6. [Заключение](project_1/conclusion.md)
+### 6. [Графики](project_1/charts.md)
+
+### 7. [Заключение](project_1/conclusion.md)
 
 
