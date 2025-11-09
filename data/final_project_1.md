@@ -1,10 +1,13 @@
-# Итоговый проект №1
+# Итоговый проект №1 «Русские дома»
 
 ### [Назад в Final Tasks ⤶](/README.md)
 
 ---
 
 <img src="/img/russian_houses.png" width="100%">
+
+## О проекте
+Итоговый проект [курса](https://stepik.org/course/137235/syllabus) по инженерии данных.  
 
 ## Содержание
 ### 1. [Входные данные](project_1/input.md)
@@ -20,5 +23,3 @@
 ### 6. [Графики](project_1/charts.md)
 
 ### 7. [Заключение](project_1/conclusion.md)
-
-
